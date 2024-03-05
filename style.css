@@ -1,57 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Fredoka One', cursive;
     background-image: linear-gradient(180deg, dodgerblue, #267ADD);
 }
 
-h1{
+h1 {
     font-size: 92px;
     color: #FAB201;
     font-weight: 900;
-    -webkit-text-stroke: 5px white; 
+    -webkit-text-stroke: 5px white;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.game-display{
+.game-display {
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
-.container,.game-display, #result{
+.container,
+.game-display,
+#result {
     flex-direction: column;
-} 
-.box{
+}
+
+.box {
     height: 100px;
     width: 100px;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
-    box-shadow : 2px 2px Silver ;
+    box-shadow: 2px 2px Silver;
+    position: relative;
 }
 
-p{
+p {
     text-align: center;
     line-height: 100px;
     font-size: 60px;
     color: white;
 }
 
-h3{
+h3 {
+    font-weight: 400;
     color: white;
     font-size: 30px;
 }
 
-#result{
+#result {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,15 +71,15 @@ h3{
     opacity: 0.9;
 }
 
-#message{
+#message {
     font-size: 50px;
     color: white;
 }
 
-#button{
+#button {
     padding: 10px;
     margin-top: 30px;
-    background-color:#FAB201;
+    background-color: #FAB201;
     color: white;
     cursor: pointer;
     text-align: center;
@@ -82,19 +89,32 @@ h3{
     border-radius: 5px;
 }
 
-a{
+h2 {
+    color: #FAB201;
+    position: absolute;
+    font-size: 92px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
     color: white;
 }
 
-@media (max-width:600px){
-    h1{
+@media (max-width:600px) {
+    h1 {
         font-size: 52px;
         -webkit-text-stroke: 2px white;
     }
-    h3{
+
+    h3 {
         font-size: 25px;
     }
-    #message{
+
+    #message {
         font-size: 35px;
     }
 }
